@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "1wiSW0mG/muQxlLY7N+IdARWZVc8Oik4Hcv0MOVhlVWcWiCUWVJV/RzZfAyXBq1vgKbhqzx4UezilBITVQg6Zw==",
+  "success": true,
+  "projectFilePath": "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Plugin\\Lux.Plugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Harold\\.nuget\\packages\\dalamudpackager\\2.1.12\\dalamudpackager.2.1.12.nupkg.sha512",
+    "C:\\Users\\Harold\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\Harold\\.nuget\\packages\\system.drawing.common\\8.0.1\\system.drawing.common.8.0.1.nupkg.sha512",
+    "C:\\Users\\Harold\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Harold\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Harold\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

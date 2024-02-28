@@ -1,0 +1,14 @@
+Z:\FFXIV-plugins\Lux\out\Lux.Server.deps.json
+z:\FFXIV-plugins\Lux\out\Lux.Server.dll
+z:\FFXIV-plugins\Lux\out\Lux.Server.pdb
+z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\Lux.Server.csproj.AssemblyReference.cache
+z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\Lux.Server.GeneratedMSBuildEditorConfig.editorconfig
+z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\Lux.Server.AssemblyInfoInputs.cache
+z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\Lux.Server.AssemblyInfo.cs
+z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\Lux.Server.csproj.CoreCompileInputs.cache
+z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\Lux.Server.sourcelink.json
+Z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\Lux.Server.csproj.CopyComplete
+z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\Lux.Server.dll
+z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\refint\Lux.Server.dll
+z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\Lux.Server.pdb
+Z:\FFXIV-plugins\Lux\src\Lux.Server\obj\x64\Debug\ref\Lux.Server.dll

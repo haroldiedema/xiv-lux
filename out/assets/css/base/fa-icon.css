@@ -1,0 +1,32 @@
+:host {
+    display: inline-flex;
+    width: var(--size);
+    height: var(--size);
+    color: var(--color, inherit);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: rotate(var(--rotate, 0deg));
+}
+
+svg > path:first-child {
+    fill: var(--color);
+    opacity: 1;
+}
+
+svg > path:nth-child(2) {
+    fill: var(--alt-color, var(--color, inherit));
+    opacity: 0.75;
+}

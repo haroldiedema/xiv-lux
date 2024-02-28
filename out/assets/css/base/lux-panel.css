@@ -1,0 +1,16 @@
+:host {
+    position: fixed;
+    padding: 4px;
+    background: #212021;
+    border: 1px solid #101010;
+    border-radius: 5px;
+    display: inline-block;
+    z-index: 1000;
+}
+
+:host(.hidden) {
+    display: none;
+}
+:host(.isZeroWidth) {
+    opacity: 0;
+}

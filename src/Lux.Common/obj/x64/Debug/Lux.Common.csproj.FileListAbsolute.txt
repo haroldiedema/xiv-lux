@@ -1,0 +1,13 @@
+z:\FFXIV-plugins\Lux\out\Lux.Common.deps.json
+z:\FFXIV-plugins\Lux\out\Lux.Common.dll
+z:\FFXIV-plugins\Lux\out\Lux.Common.pdb
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\Lux.Common.csproj.AssemblyReference.cache
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\Lux.Common.GeneratedMSBuildEditorConfig.editorconfig
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\Lux.Common.AssemblyInfoInputs.cache
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\Lux.Common.AssemblyInfo.cs
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\Lux.Common.csproj.CoreCompileInputs.cache
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\Lux.Common.sourcelink.json
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\Lux.Common.dll
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\refint\Lux.Common.dll
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\Lux.Common.pdb
+z:\FFXIV-plugins\Lux\src\Lux.Common\obj\x64\Debug\ref\Lux.Common.dll

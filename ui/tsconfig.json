@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "module": "ES2022",
+        "target": "ESNext",
+        "moduleResolution": "Bundler",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "../out/assets/js",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "strictNullChecks": false,
+        "noImplicitThis": false,
+        "noImplicitReturns": false,
+        "noUnusedParameters": false,
+        "allowSyntheticDefaultImports": true,
+        "useDefineForClassFields": false,
+        "jsx": "react-jsx",
+        "jsxImportSource": "@/System/Interface",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+}

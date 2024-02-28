@@ -1,0 +1,88 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-family: monospace;
+    font-size: 11px;
+    text-shadow: 1px 1px #000;
+    margin-right: 8px;
+    color: #9a999a;
+    height: 30px;
+}
+
+.icon {
+    position: relative;
+    top: -1px;
+}
+
+.name {
+    display: block;
+    text-align: right;
+    position: relative;
+    top: 2px;
+}
+
+.name > div:first-child {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.name > div:last-child {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    font-size: 9px;
+    opacity: 0.75;
+    top: -5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: sans-serif;
+}
+
+table th {
+    text-align: center;
+    border-bottom: 1px solid #3f3f3f;
+    padding-bottom: 6px;
+}
+
+table th > h3 {
+    margin: 0;
+    font-size: 12px;
+    color: #787778;
+}
+
+table th > div {
+    font-size: 15px;
+    font-weight: bold;
+    color: #a09fa0;
+}
+
+table td {
+    vertical-align: middle;
+    height: 48px;
+}
+
+table td.fc-icon {
+    width: 42px;
+    text-align: center;
+}
+
+table td.fc-name {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+table td.fc-name > div {
+    color: #787778;
+    font-weight: normal;
+    font-size: 12px;
+}

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "zZbjRoIZfkwWYp+Di36XG1NyE9YJPDua3szlOi5iUggKMTuwvaTV69v3baTRL1TX4rm6zs79qD880aD2Zm53dw==",
+  "success": true,
+  "projectFilePath": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Harold\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\Harold\\.nuget\\packages\\system.drawing.common\\8.0.1\\system.drawing.common.8.0.1.nupkg.sha512",
+    "C:\\Users\\Harold\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Harold\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Harold\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

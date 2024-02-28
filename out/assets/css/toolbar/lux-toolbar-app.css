@@ -1,0 +1,52 @@
+@import url('/css/_shared.css');
+
+:host {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-family: monospace;
+    font-size: 11px;
+    text-shadow: 1px 1px #000;
+    color: #9a999a;
+    height: 32px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    background: #212021;
+    border: 1px solid #101010;
+    opacity: 0.75;
+    filter: grayscale(100%);
+}
+
+main > .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .name {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #b0afb0;
+    padding: 0 2px;
+}
+
+main:hover {
+    opacity: 1;
+}
+
+main.active {
+    opacity: 1;
+    filter: grayscale(0);
+    background: linear-gradient(to bottom, #2f2f2f 0, #1f1f1f 100%);
+}

@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Trump Gothic Pro';
+    src: url('TrumpGothicPro-Bold.eot');
+    src: local('Trump Gothic Pro Bold'), local('TrumpGothicPro-Bold'),
+        url('TrumpGothicPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TrumpGothicPro-Bold.woff2') format('woff2'),
+        url('TrumpGothicPro-Bold.woff') format('woff'),
+        url('TrumpGothicPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Gothic Pro';
+    src: url('TrumpGothicPro-Medium.eot');
+    src: local('Trump Gothic Pro Medium'), local('TrumpGothicPro-Medium'),
+        url('TrumpGothicPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TrumpGothicPro-Medium.woff2') format('woff2'),
+        url('TrumpGothicPro-Medium.woff') format('woff'),
+        url('TrumpGothicPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Gothic Pro';
+    src: url('TrumpGothicPro-MediumIt.eot');
+    src: local('Trump Gothic Pro Medium Italic'), local('TrumpGothicPro-MediumIt'),
+        url('TrumpGothicPro-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('TrumpGothicPro-MediumIt.woff2') format('woff2'),
+        url('TrumpGothicPro-MediumIt.woff') format('woff'),
+        url('TrumpGothicPro-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Gothic Pro';
+    src: url('TrumpGothicPro-BoldItalic.eot');
+    src: local('Trump Gothic Pro Bold Italic'), local('TrumpGothicPro-BoldItalic'),
+        url('TrumpGothicPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('TrumpGothicPro-BoldItalic.woff2') format('woff2'),
+        url('TrumpGothicPro-BoldItalic.woff') format('woff'),
+        url('TrumpGothicPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Gothic Pro';
+    src: url('TrumpGothicPro-Italic.eot');
+    src: local('Trump Gothic Pro Italic'), local('TrumpGothicPro-Italic'),
+        url('TrumpGothicPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('TrumpGothicPro-Italic.woff2') format('woff2'),
+        url('TrumpGothicPro-Italic.woff') format('woff'),
+        url('TrumpGothicPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trump Gothic Pro';
+    src: url('TrumpGothicPro.eot');
+    src: local('Trump Gothic Pro'), local('TrumpGothicPro'),
+        url('TrumpGothicPro.eot?#iefix') format('embedded-opentype'),
+        url('TrumpGothicPro.woff2') format('woff2'),
+        url('TrumpGothicPro.woff') format('woff'),
+        url('TrumpGothicPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

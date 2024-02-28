@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {}
+  },
+  "projects": {
+    "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {
+      "version": "1.5.5",
+      "restore": {
+        "projectUniqueName": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj",
+        "projectName": "Lux.Common",
+        "projectPath": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj",
+        "packagesPath": "C:\\Users\\Harold\\.nuget\\packages\\",
+        "outputPath": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Harold\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreLockProperties": {
+          "restorePackagesWithLockFile": "true"
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

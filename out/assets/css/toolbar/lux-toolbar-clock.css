@@ -1,0 +1,38 @@
+@import url('/css/_shared.css');
+
+:host {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:  6px;
+    height: 100%;
+    font-family: monospace;
+    font-size: 12px;
+    text-shadow: 1px 1px #000;
+}
+
+.clock {
+    font-family: monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background: rgba(20, 19, 20, 0.5);
+}
+
+.clock > label {
+    padding: 0;
+    margin: 0;
+    color: #6a6a6a;
+    font-size: 11px;
+}
+
+.clock > div {
+    color: #9a999a;
+    font-weight: bold;
+    font-size: 13px;
+}

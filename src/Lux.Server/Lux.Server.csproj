@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<LangVersion>latestmajor</LangVersion>
+		<Nullable>enable</Nullable>
+		<Configurations>Release;Debug</Configurations>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<Platforms>x64</Platforms>
+		<AssemblyName>Lux.Server</AssemblyName>
+		<RootNamespace>Lux.Server</RootNamespace>
+		<Version>1.5.5.0</Version>
+		<OutputPath>..\..\out</OutputPath>
+		<IsPackable>false</IsPackable>
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Lux.Common\Lux.Common.csproj" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<DalamudLibPath>$(appdata)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Dalamud">
+			<HintPath>$(DalamudLibPath)Dalamud.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+</Project>

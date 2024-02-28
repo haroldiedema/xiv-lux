@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Map with Markers</title>
+    <style>
+        #mapContainer {
+            position: relative;
+            perspective: 2048px; /* Adjust the perspective as needed */
+            transform-style: preserve-3d;
+            width: 800px;
+            height: 600px;
+        }
+        #bottomLayer, #topLayer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: center center;
+        }
+        #bottomLayer {
+            z-index: 1;
+            transform: translateZ(1000px); /* Adjust the distance as needed */
+        }
+        #topLayer {
+            position: fixed;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="mapContainer">
+        <canvas id="bottomLayer" width="800" height="600"></canvas>
+        <canvas id="topLayer" width="800" height="600"></canvas>
+    </div>
+
+    <script>
+        // Get canvas contexts
+        const bottomLayer = document.getElementById('bottomLayer').getContext('2d');
+        const topLayer = document.getElementById('topLayer').getContext('2d');
+
+        // Simulated marker data (x, y positions)
+        const markers = [
+            { x: 100, y: 100 },
+            { x: 200, y: 200 },
+        ];
+
+        // Function to apply 3D tilt effect and project markers
+        function projectMarkers(tiltAngleX, tiltAngleY) {
+            // Clear top layer
+            topLayer.clearRect(0, 0, topLayer.canvas.width, topLayer.canvas.height);
+
+            // Apply 3D tilt effect to bottom layer
+            bottomLayer.canvas.style.transform = `rotateX(${tiltAngleX}deg) rotateY(${tiltAngleY}deg)`;
+            bottomLayer.clearRect(0, 0, bottomLayer.canvas.width, bottomLayer.canvas.height);
+            bottomLayer.fillStyle = 'blue';
+            bottomLayer.fillRect(0, 0, bottomLayer.canvas.width, bottomLayer.canvas.height);
+
+            topLayer.save();
+            const radians = tiltAngleX * Math.PI / 180;
+            topLayer.setTransform(1, 0, 0, Math.cos(radians), 0, 0);
+
+            // Project and draw markers on top layer
+            markers.forEach(marker => {
+                // Project marker's position onto top layer
+                const projectedX = marker.x * Math.cos(tiltAngleY * Math.PI / 180);
+                const projectedY = marker.y * Math.cos(tiltAngleX * Math.PI / 180); // Corrected calculation
+
+                // Draw marker on top layer
+                topLayer.beginPath();
+                topLayer.arc(marker.x, marker.y, 5, 0, 2 * Math.PI);
+                topLayer.fillStyle = 'red';
+                topLayer.fill();
+
+                topLayer.font = '12px Arial';
+                topLayer.fillStyle = 'white';
+                topLayer.fillText(`(A marker)`, marker.x + 10, marker.y - 10);
+            });
+
+            topLayer.restore();
+        }
+
+        // Simulate animation (tilt every frame)
+        let tiltAngle = 0;
+        function animate(t) {
+            
+            tiltAngleX = 15 - Math.sin(t / 1000) * 30;
+            tiltAngleY = 15 - Math.cos(t / 1000) * 30;
+
+            projectMarkers(tiltAngleX, tiltAngleY);
+            requestAnimationFrame(animate);
+        }
+
+        // Start animation
+        animate();
+    </script>
+</body>
+</html>

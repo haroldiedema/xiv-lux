@@ -1,0 +1,73 @@
+@import url('/css/_shared.css');
+
+:host {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #212021;
+    color: #dadada;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ded3b5;
+    z-index: 0;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+nav {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+    height: 32px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+nav > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+}
+
+nav > section:last-child {
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-shadow: 1px 1px 6px #000;
+    color: #fff;
+}
+
+nav > section:last-child > * { 
+    pointer-events: all;
+}
+
+nav.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

@@ -1,0 +1,11 @@
+﻿{
+    "Name": "Lux",
+    "Author": "Una Ironbane",
+    "Punchline": "Relay all the things!",
+    "Description": "Runs a webserver that hosts map overlays that can be shown in either a browser or ingame using Browsingway.",
+    "RepoUrl": "https://github.com/haroldiedema/xiv-lux",
+    "Tags": [
+        "webserver",
+        "overlay"
+    ]
+}

@@ -1,0 +1,13 @@
+z:\FFXIV-plugins\Lux\out\Lux.Plugin.json
+z:\FFXIV-plugins\Lux\out\Lux.Plugin.deps.json
+z:\FFXIV-plugins\Lux\out\Lux.Plugin.dll
+z:\FFXIV-plugins\Lux\out\Lux.Plugin.pdb
+z:\FFXIV-plugins\Lux\src\Lux.Plugin\obj\x64\Debug\Lux.Plugin.csproj.AssemblyReference.cache
+z:\FFXIV-plugins\Lux\src\Lux.Plugin\obj\x64\Debug\Lux.Plugin.GeneratedMSBuildEditorConfig.editorconfig
+z:\FFXIV-plugins\Lux\src\Lux.Plugin\obj\x64\Debug\Lux.Plugin.AssemblyInfoInputs.cache
+z:\FFXIV-plugins\Lux\src\Lux.Plugin\obj\x64\Debug\Lux.Plugin.AssemblyInfo.cs
+z:\FFXIV-plugins\Lux\src\Lux.Plugin\obj\x64\Debug\Lux.Plugin.csproj.CoreCompileInputs.cache
+z:\FFXIV-plugins\Lux\src\Lux.Plugin\obj\x64\Debug\Lux.Plugin.sourcelink.json
+z:\FFXIV-plugins\Lux\src\Lux.Plugin\obj\x64\Debug\Lux.Plugin.csproj.CopyComplete
+z:\FFXIV-plugins\Lux\src\Lux.Plugin\obj\x64\Debug\Lux.Plugin.dll
+z:\FFXIV-plugins\Lux\src\Lux.Plugin\obj\x64\Debug\Lux.Plugin.pdb

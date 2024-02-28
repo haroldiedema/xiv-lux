@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\Dalamud.Plugin.Bootstrap.targets" />
+	
+	<PropertyGroup>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Configurations>Release;Debug</Configurations>
+		<Platforms>x64</Platforms>
+		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<LangVersion>latestmajor</LangVersion>
+		<Version>1.5.5.0</Version>
+		<OutputPath>..\..\out</OutputPath>
+		<AssemblyName>Lux.Plugin</AssemblyName>
+		<RootNamespace>Lux</RootNamespace>
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Lux.Common\Lux.Common.csproj" />
+		<ProjectReference Include="..\Lux.Server\Lux.Server.csproj" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<Content Include="Lux.Plugin.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>

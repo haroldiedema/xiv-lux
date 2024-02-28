@@ -1,0 +1,20 @@
+{
+  "Author": "Una Ironbane",
+  "Name": "Lux",
+  "InternalName": "Lux.Plugin",
+  "AssemblyVersion": "1.5.5.0",
+  "Description": "Runs a webserver that hosts map overlays that can be shown in either a browser or ingame using Browsingway.",
+  "ApplicableVersion": "any",
+  "RepoUrl": "https://github.com/haroldiedema/xiv-lux",
+  "Tags": [
+    "webserver",
+    "overlay"
+  ],
+  "DalamudApiLevel": 9,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "Punchline": "Relay all the things!",
+  "AcceptsFeedback": true
+}

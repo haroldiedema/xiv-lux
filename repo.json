@@ -1,0 +1,24 @@
+[
+    {
+        "Author": "Una",
+        "Name": "Lux",
+        "Punchline": "An extended interface plugin.",
+        "Description": "Lux is a collection of interface extensions, powered by Web Technologies.",
+        "Tags": [
+            "ui"
+        ],
+        "InternalName": "Lux",
+        "RepoUrl": "https://github.com/haroldiedema/xiv-lux",
+        "DownloadCount": 1,
+        "LastUpdate": 1708542961594,
+        "DownloadLinkInstall": "https://puni.sh/api/plugins/download/6/Artisan/versions/latest.zip",
+        "DownloadLinkUpdate": "https://puni.sh/api/plugins/download/6/Artisan/versions/latest.zip",
+        "AssemblyVersion": "3.0.4.3",
+        "ApplicableVersion": "any",
+        "DalamudApiLevel": "9",
+        "Changelog": "",
+        "TestingAssemblyVersion": "3.0.2.10",
+        "DownloadLinkTesting": "https://puni.sh/api/plugins/download/6/Artisan/versions/testing.zip",
+        "IconUrl": "https://s3.puni.sh/media/plugin/6/icon-3h8wd5b9qr.png"
+    }
+]
