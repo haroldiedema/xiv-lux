@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Dalamud.Game;
 using Dalamud.Plugin;
 using Dalamud.Plugin.Services;
 
@@ -28,10 +29,10 @@ public static class ServiceContainer
         }
 
         _services[typeof(DalamudPluginInterface)] = dalamud;
+        _services[typeof(ISigScanner)] = _pluginServices.SigScanner;
 
         _pluginServices.GetType().GetProperties().ToList().ForEach(p => {
             _services[p.PropertyType] = p.GetValue(_pluginServices)!;
-            _pluginServices.Log.Debug($"Initialized service '{p.PropertyType.FullName}'.");
         });
 
         AssemblyList AssemblyList = new(Assembly.GetExecutingAssembly(), Assembly.GetCallingAssembly());

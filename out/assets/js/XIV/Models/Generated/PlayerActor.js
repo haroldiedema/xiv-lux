@@ -25,70 +25,74 @@ __decorate([
 ], PlayerActor.prototype, "name", void 0);
 __decorate([
     Offset(2),
+    __metadata("design:type", Number)
+], PlayerActor.prototype, "level", void 0);
+__decorate([
+    Offset(3),
     __metadata("design:type", Boolean)
 ], PlayerActor.prototype, "isMoving", void 0);
 __decorate([
-    Offset(3),
+    Offset(4),
     __metadata("design:type", Vec2)
 ], PlayerActor.prototype, "position", void 0);
 __decorate([
-    Offset(4),
+    Offset(5),
     __metadata("design:type", Vec3)
 ], PlayerActor.prototype, "worldPosition", void 0);
 __decorate([
-    Offset(5),
+    Offset(6),
     __metadata("design:type", Number)
 ], PlayerActor.prototype, "heading", void 0);
 __decorate([
-    Offset(6),
+    Offset(7),
     __metadata("design:type", String)
 ], PlayerActor.prototype, "targetId", void 0);
 __decorate([
-    Offset(7),
+    Offset(8),
     __metadata("design:type", Number)
 ], PlayerActor.prototype, "jobId", void 0);
 __decorate([
-    Offset(8),
+    Offset(9),
     __metadata("design:type", Number)
 ], PlayerActor.prototype, "currentHp", void 0);
 __decorate([
-    Offset(9),
+    Offset(10),
     __metadata("design:type", Number)
 ], PlayerActor.prototype, "maxHp", void 0);
 __decorate([
-    Offset(10),
+    Offset(11),
     __metadata("design:type", Number)
 ], PlayerActor.prototype, "currentMp", void 0);
 __decorate([
-    Offset(11),
+    Offset(12),
     __metadata("design:type", Number)
 ], PlayerActor.prototype, "maxMp", void 0);
 __decorate([
-    Offset(12),
+    Offset(13),
     __metadata("design:type", Boolean)
 ], PlayerActor.prototype, "isInCombat", void 0);
 __decorate([
-    Offset(13),
+    Offset(14),
     __metadata("design:type", Boolean)
 ], PlayerActor.prototype, "isHostile", void 0);
 __decorate([
-    Offset(14),
+    Offset(15),
     __metadata("design:type", Boolean)
 ], PlayerActor.prototype, "isPartyMember", void 0);
 __decorate([
-    Offset(15),
+    Offset(16),
     __metadata("design:type", Boolean)
 ], PlayerActor.prototype, "isAllianceMember", void 0);
 __decorate([
-    Offset(16),
+    Offset(17),
     __metadata("design:type", Boolean)
 ], PlayerActor.prototype, "isDead", void 0);
 __decorate([
-    Offset(17),
+    Offset(18),
     __metadata("design:type", PlayerOnlineStatus)
 ], PlayerActor.prototype, "onlineStatus", void 0);
 __decorate([
-    Offset(18),
+    Offset(19),
     __metadata("design:type", Action)
 ], PlayerActor.prototype, "castAction", void 0);
 PlayerActor = __decorate([

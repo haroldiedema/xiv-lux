@@ -34,6 +34,12 @@ let ActorManager = class ActorManager {
     get players() {
         return Array.from(this.playerActors.values()).filter((actor) => actor.id !== this.localPlayerId);
     }
+    get allPlayers() {
+        return Array.from(this.playerActors.values());
+    }
+    getPlayerById(id) {
+        return this.playerActors.get(id);
+    }
     get npcs() {
         return Array.from(this.npcActors.values());
     }

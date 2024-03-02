@@ -15,6 +15,16 @@ let Invoker = class Invoker {
         this.aetheryte = {
             teleport: (id) => this.socket.invoke('Aetheryte.Teleport', [id]),
         };
+        this.chat = {
+            send: (line) => this.socket.invoke('Chat.Send', [line]),
+        };
+        this.companion = {
+            summon: () => this.socket.invoke('Companion.Summon', []),
+            setCommand: (command) => this.socket.invoke('Companion.SetCommand', [command]),
+        };
+        this.gearset = {
+            setCurrentGearset: (index) => this.socket.invoke('Gearset.SetCurrentGearset', [index]),
+        };
         this.zone = {
             getZone: (mapId) => this.socket.invoke('Zone.GetZone', [mapId]),
             setSelectedZone: (mapId) => this.socket.invoke('Zone.SetSelectedZone', [mapId]),

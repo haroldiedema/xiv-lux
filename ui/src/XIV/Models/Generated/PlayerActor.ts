@@ -16,53 +16,56 @@ export class PlayerActor
     public name: string;
 
     @Offset(2)
-    public isMoving: boolean;
+    public level: number;
 
     @Offset(3)
-    public position: Vec2;
+    public isMoving: boolean;
 
     @Offset(4)
-    public worldPosition: Vec3;
+    public position: Vec2;
 
     @Offset(5)
-    public heading: number;
+    public worldPosition: Vec3;
 
     @Offset(6)
-    public targetId: string;
+    public heading: number;
 
     @Offset(7)
-    public jobId: number;
+    public targetId: string;
 
     @Offset(8)
-    public currentHp: number;
+    public jobId: number;
 
     @Offset(9)
-    public maxHp: number;
+    public currentHp: number;
 
     @Offset(10)
-    public currentMp: number;
+    public maxHp: number;
 
     @Offset(11)
-    public maxMp: number;
+    public currentMp: number;
 
     @Offset(12)
-    public isInCombat: boolean;
+    public maxMp: number;
 
     @Offset(13)
-    public isHostile: boolean;
+    public isInCombat: boolean;
 
     @Offset(14)
-    public isPartyMember: boolean;
+    public isHostile: boolean;
 
     @Offset(15)
-    public isAllianceMember: boolean;
+    public isPartyMember: boolean;
 
     @Offset(16)
-    public isDead: boolean;
+    public isAllianceMember: boolean;
 
     @Offset(17)
-    public onlineStatus: PlayerOnlineStatus;
+    public isDead: boolean;
 
     @Offset(18)
+    public onlineStatus: PlayerOnlineStatus;
+
+    @Offset(19)
     public castAction: Action;
 }

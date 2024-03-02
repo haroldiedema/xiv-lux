@@ -1,4 +1,4 @@
-        /* Lux, a Fintal Fantasy XIV Dalamud plugin         .____     ____ _______  ___
+/* Lux, a Fintal Fantasy XIV Dalamud plugin         .____     ____ _______  ___
  *      for rich cartography interfaces.            |    |   |    |   \   \/  /
  *                                                  |    |   |    |   /\     /
  * Package: Lux.Plugin                              |    |___|    |  / /     \

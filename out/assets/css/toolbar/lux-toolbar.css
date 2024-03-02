@@ -26,7 +26,7 @@
 }
 
 :host(.top) {
-    top: 0;
+    top: -1px;
 }
 
 main {
@@ -77,6 +77,7 @@ main > section {
 :host(.bottom) main {
     border-top: 1px solid #101010;
     align-items: flex-end;
+    padding-bottom: 1px;
 }
 
 :host(.top) main > #background {

@@ -63,13 +63,16 @@ internal unsafe sealed class ZoneController(ZoneManager zoneManager, FateManager
             return null;
         }
 
+        var zone = zoneManager.GetZone(agent->FlagMapMarker.MapId);
+        if (zone == null) return null;
+
         return new FlagMarker {
             IconId      = agent->FlagMapMarker.MapMarker.IconId,
             MapId       = agent->FlagMapMarker.MapId,
             TerritoryId = agent->FlagMapMarker.TerritoryId,
             Position    = new Vec2 { 
-                X = agent->FlagMapMarker.XFloat + 1024f, 
-                Y = agent->FlagMapMarker.YFloat + 1024f, 
+                X = ((agent->FlagMapMarker.XFloat + zone.Offset.X) * (zone.SizeFactor / 100.0f)) + 1024f,
+                Y = ((agent->FlagMapMarker.YFloat + zone.Offset.Y) * (zone.SizeFactor / 100.0f)) + 1024f, 
             }
         };
     }
@@ -84,15 +87,13 @@ internal unsafe sealed class ZoneController(ZoneManager zoneManager, FateManager
         if (markingController == null) return markers;
 
         var markerSpan = markingController->FieldMarkerArraySpan;
+        var zone = zoneManager.CurrentZone!;
 
         foreach (var index in Enumerable.Range(0, 8)) {
             if (markerSpan[index] is { Active: true } marker) {
                 markers.Add(new WaymarkMarker {
                     IconId  = fieldMarkers[index].MapIcon,
-                    Position = new Vec2{
-                        X = (marker.X / 1000f) + 1024f,
-                        Y = (marker.Z / 1000f) + 1024f,
-                    },
+                    Position = Vec2.FromWorldPosition(new System.Numerics.Vector3(marker.X / 1000f, marker.Y / 1000f, marker.Z / 1000f), zone),
                 });
             }
         }

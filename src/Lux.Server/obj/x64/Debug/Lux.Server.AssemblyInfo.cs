@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lux.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.5.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.5.5.0+63eef0cbe2d4c945298907050a492cd580be4231")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.5.5.0+a1c5694f4a00f6de2b6e04f111cde940bb1d5e3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lux.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lux.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.5.5.0")]

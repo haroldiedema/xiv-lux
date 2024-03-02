@@ -46,7 +46,7 @@ let FatesLayer = class FatesLayer extends AbstractLayer {
         const col = this.getColor(marker);
         if (null !== col && marker.state !== FateStateKind.Preparation) {
             this.canvas.drawArc(marker.position.x, marker.position.y, {
-                radius: marker.radius,
+                radius: marker.radius * this.zoom,
                 fill: this.createGradient(pos, marker.radius, col),
                 stroke: `rgba(${col[0]}, ${col[1]}, ${col[2]}, .5)`,
                 strokeWidth: 2,
@@ -112,7 +112,7 @@ let FatesLayer = class FatesLayer extends AbstractLayer {
         return null;
     }
     createGradient(pos, radius, color) {
-        const gradient = this.canvas.context.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, radius);
+        const gradient = this.canvas.context.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, radius * this.zoom);
         gradient.addColorStop(0.5, `rgba(${color[0]}, ${color[1]}, ${color[2]}, 0)`);
         gradient.addColorStop(1, `rgba(${color[0]}, ${color[1]}, ${color[2]}, .5)`);
         return gradient;

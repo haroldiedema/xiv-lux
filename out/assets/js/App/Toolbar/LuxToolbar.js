@@ -29,6 +29,7 @@ let LuxToolbar = class LuxToolbar extends AbstractComponent {
         this.isAutoHideEnabled = this.config.get('toolbar.autoHide');
         this.config.on('toolbar.autoHide', (value) => this.isAutoHideEnabled = value);
         this.socket.subscribe('VisibleNativeElements', e => this.isUsingNativeElements = e.length > 0);
+        this.socket.subscribe('Gearset', e => console.log('GS:', e));
     }
     render() {
         return (_jsx("ui:host", { class: {
@@ -36,7 +37,7 @@ let LuxToolbar = class LuxToolbar extends AbstractComponent {
                 top: this.position === 'top',
                 autoHide: this.isAutoHideEnabled,
                 isMouseOver: this.isMouseOver,
-            }, "on:$mouseenter": () => this.isMouseOver = true, "on:$mouseout": () => this.isMouseOver = false, children: _jsxs("main", { children: [_jsx("div", { id: "background" }), _jsx("section", {}), _jsx("section", {}), _jsxs("section", { class: { 'is-using-native-elements': this.isUsingNativeElements }, children: [AppletRepository.singletonNames.map((name) => (_jsx("lux-toolbar-app", { app: name }))), _jsx("vr", {}), _jsx("lux-toolbar-location", {}), _jsx("lux-toolbar-weather", {}), _jsx("lux-toolbar-clock", {}), _jsx("vr", {}), this.renderAutoHideButton(), this.renderPositionButton()] })] }) }));
+            }, "on:$mouseenter": () => this.isMouseOver = true, "on:$mouseout": () => this.isMouseOver = false, children: _jsxs("main", { children: [_jsx("div", { id: "background" }), _jsxs("section", { children: [_jsx("lux-toolbar-gearset", {}), _jsx("lux-toolbar-companion", {})] }), _jsx("section", {}), _jsxs("section", { class: { 'is-using-native-elements': this.isUsingNativeElements }, children: [AppletRepository.singletonNames.map((name) => (_jsx("lux-toolbar-app", { app: name }))), _jsx("vr", {}), _jsx("lux-toolbar-location", {}), _jsx("lux-toolbar-weather", {}), _jsx("lux-toolbar-clock", {}), _jsx("vr", {}), this.renderAutoHideButton(), this.renderPositionButton()] })] }) }));
     }
     /**
      * Renders the button to toggle the auto-hide feature.

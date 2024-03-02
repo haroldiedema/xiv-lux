@@ -3,6 +3,7 @@
 import { Offset, ModelStruct } from '@/System/Serializer';
 import { QuestMarkerKind } from '@/XIV/Models/Generated/QuestMarkerKind';
 import { Vec2 } from '@/XIV/Models/Vec2';
+import { Vec3 } from '@/XIV/Models/Generated/Vec3';
 import { Quest } from '@/XIV/Models/Generated/Quest';
 
 @ModelStruct('QuestMarker')
@@ -30,5 +31,8 @@ export class QuestMarker
     public readonly position: Vec2;
 
     @Offset(7)
+    public readonly worldPosition: Vec3;
+
+    @Offset(8)
     public readonly quest: Quest;
 }

@@ -19,5 +19,6 @@ public record QuestMarker
     [Offset(4)] public uint? TargetMapId;
     [Offset(5)] public float Radius = 0;
     [Offset(6)] public Vec2 Position = new();
-    [Offset(7)] public Quest? Quest;
+    [Offset(7)] public Vec3 WorldPosition = new();
+    [Offset(8)] public Quest? Quest;
 }

@@ -40,6 +40,8 @@ internal sealed class ZoneFactory(ModelSerializer serializer, IDataManager dataM
             Layers        = GetZoneLayers(map),
         };
 
+        Logger.Info($"ZoneFactory: Created zone {zone.PlaceName} (ID: {zone.Id}) - Offset: {zone.Offset.X}, {zone.Offset.Y}");
+
         return zone;
     }
 
@@ -67,7 +69,7 @@ internal sealed class ZoneFactory(ModelSerializer serializer, IDataManager dataM
         string rawId    = map.Id.RawString;
         string fileName = $"ui/map/{rawId}/{rawId.Replace("/", "")}_m.tex";
         
-        return DataManager.GetFile<TexFile>(fileName) != null ? fileName : null;
+        return DataManager.FileExists(fileName) ? fileName : null;
     }
 
     private static ZoneReference? GetParentZoneReference(Map map)
@@ -134,6 +136,22 @@ internal sealed class ZoneFactory(ModelSerializer serializer, IDataManager dataM
                 Position = Vec2.FromVector2(new System.Numerics.Vector2(marker.X, marker.Y)),
                 metadata = metadata,
             });
+        }
+
+        // Add Eureka treasure coffer locations.
+        if (EurekaCoffers.Positions.TryGetValue(map.TerritoryType.Row, out List<System.Numerics.Vector3>? positions)) {
+            foreach (var position in positions) {
+                markers.Add(new StaticMarker {
+                    Kind     = StaticMarkerKind.Standard,
+                    Name     = "",
+                    IconId   = 60356,
+                    Position = Vec2.FromWorldPosition(position, map),
+                    metadata = new Dictionary<string, object?>
+                    {
+                        ["IsEurekaCoffer"] = 1,
+                    },
+                });
+            }
         }
 
         return markers;

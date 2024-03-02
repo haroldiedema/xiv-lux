@@ -12,6 +12,16 @@ export class Invoker
     public aetheryte = {
         teleport: (id: number): Promise<any> => this.socket.invoke('Aetheryte.Teleport', [id]),
     } as const;
+    public chat = {
+        send: (line: string): Promise<any> => this.socket.invoke('Chat.Send', [line]),
+    } as const;
+    public companion = {
+        summon: (): Promise<any> => this.socket.invoke('Companion.Summon', []),
+        setCommand: (command: number): Promise<any> => this.socket.invoke('Companion.SetCommand', [command]),
+    } as const;
+    public gearset = {
+        setCurrentGearset: (index: number): Promise<any> => this.socket.invoke('Gearset.SetCurrentGearset', [index]),
+    } as const;
     public zone = {
         getZone: (mapId: number): Promise<Model.Zone> => this.socket.invoke('Zone.GetZone', [mapId]),
         setSelectedZone: (mapId: number): Promise<any> => this.socket.invoke('Zone.SetSelectedZone', [mapId]),

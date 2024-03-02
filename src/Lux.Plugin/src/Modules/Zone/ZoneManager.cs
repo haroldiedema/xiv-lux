@@ -55,8 +55,14 @@ namespace Lux;
         var agent = AgentMap.Instance();
         if (agent == null) return;
 
+        var zone = GetZone(mapId);
+        if (zone == null) return;
+
+        var x = (mapX - zone.Offset.X - 1024.0f) / (zone.SizeFactor / 100.0f);
+        var y = (mapY - zone.Offset.Y - 1024.0f) / (zone.SizeFactor / 100.0f);
+
         agent->IsFlagMarkerSet = 0;
-        agent->SetFlagMapMarker(territoryId, mapId, mapX - 1024f, mapY - 1024f, iconId ?? 60561);
+        agent->SetFlagMapMarker(territoryId, mapId, x, y, iconId ?? 60561);
 
         if (mapId == SelectedZone?.Id) {
             OnSelectedZoneChanged?.Invoke(SelectedZone, SelectedZone);

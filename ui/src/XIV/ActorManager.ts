@@ -39,6 +39,16 @@ export class ActorManager
         return Array.from(this.playerActors.values()).filter((actor) => actor.id !== this.localPlayerId);
     }
 
+    public get allPlayers(): PlayerActor[]
+    {
+        return Array.from(this.playerActors.values());
+    }
+
+    public getPlayerById(id: string): PlayerActor
+    {
+        return this.playerActors.get(id);
+    }
+
     public get npcs(): NpcActor[]
     {
         return Array.from(this.npcActors.values());

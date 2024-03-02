@@ -271,6 +271,7 @@ public class ModelRepository : IDisposable
                 return "string";
             case "Boolean": 
                 return "boolean";
+            case "Int16" :
             case "Int32" : 
             case "Int64" : 
             case "UInt16":

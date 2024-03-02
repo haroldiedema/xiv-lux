@@ -29,8 +29,8 @@ namespace Lux;
     {
         if (name.Equals("you", StringComparison.OrdinalIgnoreCase)) return Players.Values.FirstOrDefault(p => p.Id == gameStateManager.Character?.ObjectId.ToString("X"));
 
-        // Find player by name case insensitive.
-        return Players.Values.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        // Find player by name case insensitive. (starts with to avoid world name shinangans)
+        return Players.Values.FirstOrDefault(p => name.StartsWith(p.Name, StringComparison.OrdinalIgnoreCase));
     }
 
     public PlayerActor? GetPrimaryPlayer()
@@ -135,6 +135,7 @@ namespace Lux;
         if (actor.WorldPosition != wPos) actor.WorldPosition                      = wPos;
         if (actor.Heading != player.Rotation) actor.Heading                       = -player.Rotation + MathF.PI;
         if (actor.Name != player.Name.ToString()) actor.Name                      = player.Name.ToString();
+        if (actor.level != player.Level) actor.level                              = player.Level;
         if (actor.JobId != player.ClassJob.Id) actor.JobId                        = player.ClassJob.Id;
         if (actor.CurrentHp != player.CurrentHp) actor.CurrentHp                  = player.CurrentHp;
         if (actor.MaxHp != player.MaxHp) actor.MaxHp                              = player.MaxHp;
@@ -190,6 +191,7 @@ namespace Lux;
         if (actor.Kind != npcKind) actor.Kind                                  = npcKind;
         if (actor.SubKind != npc.SubKind) actor.SubKind                        = npc.SubKind;
         if (actor.NpcKind != npc.BattleNpcKind) actor.NpcKind                  = npc.BattleNpcKind;
+        if (actor.OwnerId != npc.OwnerId.ToString("X")) actor.OwnerId          = npc.OwnerId.ToString("X");
         if (actor.WorldPosition != worldPos) actor.WorldPosition               = worldPos;
         if (actor.Heading != npc.Rotation) actor.Heading                       = -npc.Rotation + MathF.PI;
         if (actor.Name != npc.Name.ToString()) actor.Name                      = npc.Name.ToString();

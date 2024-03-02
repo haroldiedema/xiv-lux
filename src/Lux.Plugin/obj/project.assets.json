@@ -220,8 +220,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {
-              "projectPath": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj"
+            "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {
+              "projectPath": "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj"
             },
             "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Server\\Lux.Server.csproj": {
               "projectPath": "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Server\\Lux.Server.csproj"

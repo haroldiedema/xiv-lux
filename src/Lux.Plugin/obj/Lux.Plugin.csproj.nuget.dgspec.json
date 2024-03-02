@@ -4,14 +4,14 @@
     "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Plugin\\Lux.Plugin.csproj": {}
   },
   "projects": {
-    "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {
+    "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {
       "version": "1.5.5",
       "restore": {
-        "projectUniqueName": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj",
+        "projectUniqueName": "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj",
         "projectName": "Lux.Common",
-        "projectPath": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj",
+        "projectPath": "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj",
         "packagesPath": "C:\\Users\\Harold\\.nuget\\packages\\",
-        "outputPath": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\obj\\",
+        "outputPath": "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Harold\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -102,8 +102,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {
-                "projectPath": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj"
+              "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {
+                "projectPath": "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj"
               },
               "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Server\\Lux.Server.csproj": {
                 "projectPath": "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Server\\Lux.Server.csproj"
@@ -185,8 +185,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {
-                "projectPath": "z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj"
+              "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj": {
+                "projectPath": "Z:\\FFXIV-plugins\\Lux\\src\\Lux.Common\\Lux.Common.csproj"
               }
             }
           }

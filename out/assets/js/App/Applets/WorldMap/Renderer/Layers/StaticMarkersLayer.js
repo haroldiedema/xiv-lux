@@ -75,11 +75,13 @@ let StaticMarkersLayer = class StaticMarkersLayer extends AbstractLayer {
             });
             return;
         }
+        const isEurekaCoffer = marker.metadata['isEurekaCoffer'] === 1;
         this.canvas.drawIcon(marker.iconId, marker.position, {
             frustumCulled: true,
             autoScale: true,
             minScale: 20,
             maxScale: 32,
+            alpha: isEurekaCoffer ? .5 : 1,
         });
         if (marker.name) {
             this.canvas.drawText(marker.name, marker.position.x, marker.position.y - (12 / this.zoom), {

@@ -90,6 +90,6 @@ export class LuxPanel extends AbstractComponent
 
         this.a = `${vAnchor}-${hAnchor}`;
         this.x = x + offset;
-        this.y = y;
+        this.y = y - 1;
     }
 }

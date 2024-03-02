@@ -28,6 +28,8 @@ export class LuxToolbar extends AbstractComponent
 
         this.config.on('toolbar.autoHide', (value) => this.isAutoHideEnabled = value);
         this.socket.subscribe('VisibleNativeElements', e => this.isUsingNativeElements = e.length > 0);
+
+        this.socket.subscribe('Gearset', e => console.log('GS:', e));
     }
 
     public render()
@@ -45,7 +47,10 @@ export class LuxToolbar extends AbstractComponent
             >
                 <main>
                     <div id="background"/>
-                    <section></section>
+                    <section>
+                        <lux-toolbar-gearset/>
+                        <lux-toolbar-companion/>
+                    </section>
                     <section></section>
                     <section class={{'is-using-native-elements': this.isUsingNativeElements}}>
                         {AppletRepository.singletonNames.map((name: string) => (

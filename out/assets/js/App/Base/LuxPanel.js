@@ -61,7 +61,7 @@ let LuxPanel = class LuxPanel extends AbstractComponent {
         const offset = (sRect.width > 0) ? ((aRect.width / 2) - (sRect.width / 2)) : 0;
         this.a = `${vAnchor}-${hAnchor}`;
         this.x = x + offset;
-        this.y = y;
+        this.y = y - 1;
     }
 };
 __decorate([

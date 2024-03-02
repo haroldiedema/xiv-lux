@@ -10,7 +10,10 @@ namespace Lux;
 [Controller]
 internal unsafe sealed class UIVisibilityController
 {
-    private static List<string> _ignoredAddonNames = ["_FocusTargetInfo", "JobHudNotice", "JobHud", "JobGauge", "Talk", "Bait", "IKDFishingLog"];
+    private static List<string> _ignoredAddonNames = [
+        "_FocusTargetInfo", "JobHudNotice", "JobHud", "JobGauge", "Talk", "Bait", "IKDFishingLog",
+        "EurekaElementalHud", "EurekaMagiciteItemAtherList", "SelectYesNo", "SelectString", "AreaMap"
+    ];
 
     [WebSocketEventStream("VisibleNativeElements", 4)]
     public string[] StreamVisibleNativeElements()

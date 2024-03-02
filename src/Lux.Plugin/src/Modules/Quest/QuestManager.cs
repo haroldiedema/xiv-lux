@@ -47,12 +47,17 @@ internal unsafe sealed class QuestManager(QuestRepository repository, ZoneManage
         if (null == mapData) return markers;
 
         foreach (var marker in mapData->QuestDataSpan) {
+            if (marker.ObjectiveId < 1) continue;
+
+            var quest = repository.FindById(marker.ObjectiveId);
+            if (null == quest) continue;
+
             foreach (var data in marker.MarkerData.Span) {
                 var zone = zoneManager.GetZone(data.MapId);
                 if (null == zone) continue;
 
-                var quest = repository.FindActiveByName(marker.Label.ToString());
-                if (null == quest) continue;
+                // var quest = repository.FindActiveByName(marker.Label.ToString());
+                // if (null == quest) continue;
 
                 var iconId = data.IconId;
                 if (iconId >= 60490 && iconId <= 60499) iconId = 0;
@@ -64,6 +69,7 @@ internal unsafe sealed class QuestManager(QuestRepository repository, ZoneManage
                     MapId = data.MapId,
                     Radius = data.Radius,
                     Position = Vec2.FromWorldPosition(new System.Numerics.Vector3(data.X, data.Y, data.Z), zone),
+                    WorldPosition = new Vec3 { X = data.X, Y = data.Y, Z = data.Z },
                     Quest = Quest.FromQuestRow(quest),
                 });
             }

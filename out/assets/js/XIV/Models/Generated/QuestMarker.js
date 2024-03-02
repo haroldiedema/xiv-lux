@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Offset, ModelStruct } from '@/System/Serializer';
 import { QuestMarkerKind } from '@/XIV/Models/Generated/QuestMarkerKind';
 import { Vec2 } from '@/XIV/Models/Vec2';
+import { Vec3 } from '@/XIV/Models/Generated/Vec3';
 import { Quest } from '@/XIV/Models/Generated/Quest';
 let QuestMarker = class QuestMarker {
 };
@@ -44,6 +45,10 @@ __decorate([
 ], QuestMarker.prototype, "position", void 0);
 __decorate([
     Offset(7),
+    __metadata("design:type", Vec3)
+], QuestMarker.prototype, "worldPosition", void 0);
+__decorate([
+    Offset(8),
     __metadata("design:type", Quest)
 ], QuestMarker.prototype, "quest", void 0);
 QuestMarker = __decorate([

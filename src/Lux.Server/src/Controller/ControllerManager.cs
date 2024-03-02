@@ -99,8 +99,6 @@ public static class ControllerManager
         type.GetMethods()
             .Where(m => m.GetCustomAttribute<Config.WebSocketEventStream>() != null).ToList()
             .ForEach(method => TryAddWebSocketEventStream(type, method, controller));
-
-        Logger.Debug($"Registered controller {type.Name} with {_routes.Count} route(s), {_commands.Count} command(s) and {_eventStreams.Count} event stream(s).");
     }
 
     private static void TryAddRoute(Type type, MethodInfo method, object controller)

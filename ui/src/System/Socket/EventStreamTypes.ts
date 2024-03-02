@@ -9,7 +9,10 @@ export type EventStreamType = {
     'NpcActors': Model.NpcActor[];
     'GatheringNodeActors': Model.GatheringNodeActor[];
     'Camera': any;
+    'Chat': any;
+    'CompanionState': Model.CompanionState;
     'GameState': Model.GameState;
+    'Gearset': Model.GearsetState;
     'HousingMarkers': Model.HousingMarker[];
     'QuestMarkers': Model.QuestMarker[];
     'CurrentWeatherForecast': Model.WeatherForecast[];

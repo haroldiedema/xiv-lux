@@ -5,6 +5,7 @@
 * Author:  Harold Iedema <harold@iedema.me>        |_______ \______/ /___/\  \
 * -------------------------------------------------------- \/              \*/
 
+using Dalamud.Game;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Hooking;
 using Dalamud.IoC;
@@ -76,6 +77,9 @@ internal sealed class PluginServices
 
     [PluginService]
     public IPartyList PartyList { get; private set; } = null!;
+
+    [PluginService]
+    internal ISigScanner SigScanner { get; private set; } = null!;
 
     [PluginService]
     public ITargetManager TargetManager { get; private set; } = null!;
